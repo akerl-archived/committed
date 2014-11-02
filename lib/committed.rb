@@ -33,7 +33,7 @@ class Committed < Sinatra::Base
     end
   end
   
-  def self.guess_user(from, body)
+  def self.guess_user(from = '', body = '')
     body_search = body.match(/^user ([\w-]+)$/)
     body_search ? body_search[:user] : DEFAULT_USER
   end
