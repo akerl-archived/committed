@@ -10,10 +10,10 @@ class Committed < Sinatra::Base
   RESULT_CACHE = BasicCache::TimeCache.new(lifetime: 900)
 
   get '/' do
-    redirect to("/#{DEFAULT_USER}"), 307
+    redirect to("/user/#{DEFAULT_USER}"), 307
   end
 
-  get %r{^/([\w-]+)$} do |user|
+  get %r{^/user/([\w-]+)$} do |user|
     @user = user
     @has_committed = Committed.check user
     "#{@user} has #{'not ' unless @has_committed} committed today"
