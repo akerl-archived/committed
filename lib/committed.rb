@@ -15,26 +15,34 @@ class Committed < Sinatra::Base
 
   get %r{^/user/([\w-]+)$} do |user|
     @user = user
-    @has_committed = Committed.check user
+    @has_committed = check user
     "#{@user} has #{'not ' unless @has_committed} committed today"
   end
 
   post '/sms' do
     @user = Committed.guess_user params[:From], params[:Body]
-    @has_committed = Committed.check @user
+    @has_committed = check @user
     Twilio::TwiML::Response.new do |r|
       r.Message "#{@user} has #{'not ' unless @has_committed} committed today"
     end.text
   end
 
-  def self.check(user)
+  def check(user)
     RESULT_CACHE.cache(user) do
       GithubStats.new(user).today > 0
     end
   end
   
-  def self.guess_user(from = '', body = '')
-    body_search = body.match(/^user ([\w-]+)$/)
-    body_search ? body_search[:user] : DEFAULT_USER
+  def guess_user(from, body)
+    [
+      body_search(body),
+      DEFAULT_USER
+    ].find { |user| user }
+  end
+
+  def body_search(body)
+    body.match(/^user (?<user>[\w-]+)$/)[:user]
+  rescue NoMethodError
+    nil
   end
 end
