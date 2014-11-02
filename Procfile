@@ -1,1 +1,1 @@
-web: shotgun app.rb
+web: shotgun
