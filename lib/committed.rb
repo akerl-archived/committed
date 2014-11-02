@@ -41,7 +41,7 @@ class Committed < Sinatra::Base
   end
 
   def body_search(body)
-    body.match(/^user (?<user>[\w-]+)$/)[:user]
+    body.match(/^user (?<user>[\w-]+)$/i)[:user]
   rescue NoMethodError
     nil
   end
