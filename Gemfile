@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'sinatra', '~> 1.4.5'
 gem 'thin', '~> 1.6.2'
 gem 'shotgun', '~> 0.9'
+gem 'twilio-ruby', '~> 3.13.1'
 
 group :development do
   gem 'rubocop', '~> 0.26.0'
