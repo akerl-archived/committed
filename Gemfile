@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
+ruby '2.1.4'
+
 gem 'sinatra', '~> 1.4.5'
 gem 'thin', '~> 1.6.2'
-gem 'shotgun', '~> 0.9'
 gem 'twilio-ruby', '~> 3.13.1'
 
 gem 'rubocop', '~> 0.26.0'

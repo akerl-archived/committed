@@ -1,1 +1,1 @@
-web: shotgun
+web: bundle exec thin start -p $PORT
