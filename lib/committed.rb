@@ -20,10 +20,10 @@ class Committed < Sinatra::Base
   end
 
   post '/sms' do
-    @user = Committed.guess_user params[:From], params[:Body]
+    @user = guess_user params[:From], params[:Body]
     @has_committed = check @user
     Twilio::TwiML::Response.new do |r|
-      r.Message "#{@user} has #{'not ' unless @has_committed} committed today"
+      r.Message "#{@user} has #{'not ' unless @has_committed}committed today"
     end.text
   end
 
