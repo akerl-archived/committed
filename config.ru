@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift '.'
-require 'lib/router'
+require 'lib/committed'
 use Rack::ShowExceptions
-run App.new
+run Committed.new
 
