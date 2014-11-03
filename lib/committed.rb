@@ -16,7 +16,7 @@ class Committed < Sinatra::Base
   get %r{^/user/([\w-]+)$} do |user|
     @user = user
     @has_committed = check user
-    "#{Time.now}: #{@user} has #{'not ' unless @has_committed} committed today"
+    "#{@user} has #{'not ' unless @has_committed} committed today"
   end
 
   post '/sms' do
