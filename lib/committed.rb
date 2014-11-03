@@ -32,8 +32,8 @@ class Committed < Sinatra::Base
       GithubStats.new(user).today > 0
     end
   end
-  
-  def guess_user(from, body)
+
+  def guess_user(_, body)
     [
       body_search(body),
       DEFAULT_USER
