@@ -11,6 +11,12 @@ Application to quickly check whether someone has committed today
 
 ## Usage
 
+To run this locally, `bundle install` to get the dependencies and then `bundle exec thin start`. This will start the webserver up locally. To specify a custom port, use `bundle exec thin start -p PORT`.
+
+I run this on heroku, at https://akerl-committed.herokuapp.com/
+
+It has an endpoint that responds with Twilio's TwiML, allowing this to respond to text messages with commit information. To set this up, just run it somewhere public and point your Twilio number's SMS endpoint to `https://example.com/sms/`
+
 ## License
 
 committed is released under the MIT License. See the bundled LICENSE file for details.
