@@ -46,3 +46,5 @@ class Committed < Sinatra::Base
     nil
   end
 end
+
+require 'committed/users'
