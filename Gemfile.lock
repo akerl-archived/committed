@@ -79,7 +79,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     tins (0.13.2)
-    twilio-ruby (3.14.0)
+    twilio-ruby (3.14.1)
       builder (>= 2.1.2)
       jwt (~> 1.0.0)
       multi_json (>= 1.3.0)
