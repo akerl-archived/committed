@@ -79,7 +79,7 @@ GEM
     thor (0.18.1)
     tilt (1.4.1)
     tins (0.13.2)
-    twilio-ruby (3.13.1)
+    twilio-ruby (3.14.0)
       builder (>= 2.1.2)
       jwt (~> 1.0.0)
       multi_json (>= 1.3.0)
@@ -89,7 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   basiccache (~> 0.2.2)
-  coveralls (~> 0.7.1)
+  coveralls (~> 0.7.2)
   fuubar (~> 2.0.0)
   githubstats (~> 0.2.14)
   rake (~> 10.3.2)
@@ -97,4 +97,4 @@ DEPENDENCIES
   rubocop (~> 0.27.0)
   sinatra (~> 1.4.5)
   thin (~> 1.6.2)
-  twilio-ruby (~> 3.13.1)
+  twilio-ruby (~> 3.14.0)
