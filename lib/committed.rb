@@ -47,4 +47,4 @@ class Committed < Sinatra::Base
   end
 end
 
-require 'committed/users'
+require 'committed/api'
