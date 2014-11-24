@@ -9,5 +9,5 @@ notifications:
   irc:
     template:
     - "%{repository}/%{branch}/%{build_number}: %{message} -- %{build_url}"
-    channel:
+    channels:
     - irc.oftc.net#akerl
