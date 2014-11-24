@@ -1,6 +1,6 @@
-##
-# API backend
-class Committed
+module Committed
+  ##
+  # API backend
   class API
     get '/user' do
     end
