@@ -10,4 +10,4 @@ notifications:
     template:
     - "%{repository}/%{branch}/%{build_number}: %{message} -- %{build_url}"
     channels:
-    - irc.oftc.net#akerl
+    - irc.oftc.net#akerl,sekrit
