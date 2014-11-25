@@ -6,8 +6,10 @@ gem 'twilio-ruby', '~> 3.14.0'
 gem 'githubstats', '~> 0.2.14'
 gem 'basiccache', '~> 0.2.2'
 
-gem 'rubocop', '~> 0.27.0'
-gem 'rake', '~> 10.3.2'
-gem 'coveralls', '~> 0.7.2'
-gem 'rspec', '~> 3.1.0'
-gem 'fuubar', '~> 2.0.0'
+group :development do
+  gem 'rubocop', '~> 0.27.0'
+  gem 'rake', '~> 10.4.0'
+  gem 'coveralls', '~> 0.7.2'
+  gem 'rspec', '~> 3.1.0'
+  gem 'fuubar', '~> 2.0.0'
+end
