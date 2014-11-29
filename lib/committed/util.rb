@@ -10,6 +10,8 @@ module Committed
     def check(user)
       RESULT_CACHE.cache(user) do
         GithubStats.new(user).today > 0
+      rescue
+        0
       end
     end
   end
