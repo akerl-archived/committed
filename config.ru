@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift '.'
 require 'lib/committed'
 use Rack::ShowExceptions
-run Committed.new
+run Committed::Base.new
 
