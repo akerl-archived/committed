@@ -12,9 +12,15 @@ module Committed
         begin
           GithubStats.new(user).today > 0
         rescue RuntimeError
-          0
+          :error
         end
       end
+    end
+
+    def status_message(user)
+      result = check user
+      return 'Error processing request' if result == :error
+      "#{user} has #{'not ' unless result} committed today"
     end
   end
 end

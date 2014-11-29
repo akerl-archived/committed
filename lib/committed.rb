@@ -18,16 +18,13 @@ module Committed
     end
 
     get %r{^/user/([\w-]+)$} do |user|
-      @user = user
-      @has_committed = check user
-      "#{@user} has #{'not ' unless @has_committed} committed today"
+      status_message(user)
     end
 
     post '/sms' do
       @user = guess_user params[:From], params[:Body]
-      @has_committed = check @user
       Twilio::TwiML::Response.new do |r|
-        r.Message "#{@user} has #{'not ' unless @has_committed}committed today"
+        r.Message status_message(user)
       end.text
     end
   end
