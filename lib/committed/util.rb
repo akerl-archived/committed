@@ -1,11 +1,10 @@
-require 'sinatra/base'
 require 'basiccache'
 require 'githubstats'
 
 module Committed
   ##
   # Common helper methods
-  module Util < Sinatra::Base
+  module Util
     RESULT_CACHE = BasicCache::TimeCache.new(lifetime: 900)
 
     def check(user)

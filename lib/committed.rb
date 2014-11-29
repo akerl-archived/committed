@@ -22,5 +22,13 @@ module Committed
       @has_committed = check user
       "#{@user} has #{'not ' unless @has_committed} committed today"
     end
+
+    post '/sms' do
+      @user = guess_user params[:From], params[:Body]
+      @has_committed = check @user
+      Twilio::TwiML::Response.new do |r|
+        r.Message "#{@user} has #{'not ' unless @has_committed}committed today"
+      end.text
+    end
   end
 end
