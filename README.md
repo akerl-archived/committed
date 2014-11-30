@@ -7,7 +7,7 @@ committed
 [![Build Status](https://img.shields.io/travis/akerl/committed.svg)](https://travis-ci.org/akerl/committed)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
-Application to quickly check whether someone has committed today
+Application to quickly check GitHub commit streak information
 
 ## Usage
 
