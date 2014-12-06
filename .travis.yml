@@ -12,7 +12,6 @@ notifications:
     - "%{repository}/%{branch}/%{build_number}: %{message} -- %{build_url}"
     channels:
     - irc.oftc.net#akerl
-    channel_key:
-      secure: PTxUu4UtThDLUagARTnzEuta+agCcIOExlSMXDMBkVLTMIALltfGt4mAruspcDYzYmhhQ9h9ZXLw4dXLEUG3/ovsKxr3hcmEOr/0RihX60VdDSEkNIhGzuseXYT90MS5hcdQ2hYVEEs2nqFYkr0DAFyJIvufk3/8/JF7XRTCWhc=
+    channel_key: sekrit
     on_success: always
     on_failure: always
