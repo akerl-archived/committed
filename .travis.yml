@@ -14,3 +14,4 @@ notifications:
     - secure: bNOcLIHDHlTxTyhPBZcXLb2XRt5iZQsJfjYj1WbOex8dDvBRxe8H+hNZ/L3sE5N0CsOgv63A5VSR+YKd2s5iKdydqmonHKHkM7CCz7wwABjr+Swld9YCs2S7Ld3eBm2FfWLj+2uzh4rgU6kllzplDOqVzvAuX5G1sQl7LIFUwKM=
     on_success: always
     on_failure: always
+    use_notice: true
