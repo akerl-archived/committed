@@ -11,7 +11,7 @@ notifications:
     template:
     - "%{repository}/%{branch}/%{build_number}: %{message} -- %{build_url}"
     channels:
-    - ircs://irc.oftc.net#akerl
+    - irc.oftc.net#akerl
     on_success: always
     on_failure: always
     use_notice: true
