@@ -24,7 +24,7 @@ module Committed
     post '/sms' do
       @user = guess_user params[:From], params[:Body]
       Twilio::TwiML::Response.new do |r|
-        r.Message status_message(user)
+        r.Message status_message(@user)
       end.text
     end
   end
