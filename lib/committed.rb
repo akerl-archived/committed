@@ -3,6 +3,8 @@ require 'sinatra/base'
 require 'lib/committed/sms'
 require 'lib/committed/util'
 
+##
+# Module for doing things
 module Committed
   DEFAULT_USER = ENV['COMMITTED_DEFAULT_USER'] || 'akerl'
   RESULT_CACHE = BasicCache::TimeCache.new(lifetime: 900)
