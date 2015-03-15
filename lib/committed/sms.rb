@@ -7,7 +7,7 @@ module Committed
     def guess_user(_, body)
       [
         body_search(body),
-        DEFAULT_USER
+        Committed::DEFAULT_USER
       ].find { |user| user }
     end
 

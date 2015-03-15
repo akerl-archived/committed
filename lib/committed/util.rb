@@ -5,10 +5,8 @@ module Committed
   ##
   # Common helper methods
   module Util
-    RESULT_CACHE = BasicCache::TimeCache.new(lifetime: 900)
-
     def check(user)
-      RESULT_CACHE.cache(user) do
+      Committed::RESULT_CACHE.cache(user) do
         begin
           GithubStats.new(user).today > 0
         rescue RuntimeError
