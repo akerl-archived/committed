@@ -18,7 +18,7 @@ module Committed
     def status_message(user)
       result = check user
       return 'Error processing request' if result == :error
-      "#{user} has #{'not ' unless result} committed today"
+      "#{user} has #{'not ' unless result}committed today"
     end
   end
 end
