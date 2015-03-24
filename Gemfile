@@ -1,7 +1,7 @@
 ruby '2.2.0'
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 1.4.5'
+gem 'sinatra', '~> 1.4.6'
 gem 'thin', '~> 1.6.2'
 gem 'twilio-ruby', '~> 3.15.0'
 gem 'githubstats', '~> 1.0.0'
