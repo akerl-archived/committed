@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.6'
 gem 'thin', '~> 1.6.2'
-gem 'twilio-ruby', '~> 3.15.0'
+gem 'twilio-ruby', '~> 3.16.0'
 gem 'githubstats', '~> 1.0.0'
 gem 'basiccache', '~> 1.0.0'
 
