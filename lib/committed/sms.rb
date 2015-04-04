@@ -8,7 +8,7 @@ module Committed
       [
         body_search(body),
         Committed::DEFAULT_USER
-      ].find { |user| user }
+      ].compact.first
     end
 
     def body_search(body)
