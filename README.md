@@ -17,6 +17,14 @@ I run this on heroku, at https://akerl-committed.herokuapp.com/
 
 It has an endpoint that responds with Twilio's TwiML, allowing this to respond to text messages with commit information. To set this up, just run it somewhere public and point your Twilio number's SMS endpoint to `https://example.com/sms/`
 
+### SMS commands
+
+(all commands are case insensitive)
+
+* `user NAME` -- will check commits for NAME on github and return their results
+* `register NAME` -- will register your user name for your phone number, so the server knows to default to your username for your future requests
+* Anything else -- will respond with results for your username (set via `register NAME`) or the app's global default user
+
 ## License
 
 committed is released under the MIT License. See the bundled LICENSE file for details.
