@@ -6,6 +6,7 @@ gem 'thin', '~> 1.6.2'
 gem 'twilio-ruby', '~> 3.16.0'
 gem 'githubstats', '~> 1.0.0'
 gem 'basiccache', '~> 1.0.0'
+gem 'redis', '~> 3.2.0'
 
 group :development do
   gem 'rubocop', '~> 0.29.0'
