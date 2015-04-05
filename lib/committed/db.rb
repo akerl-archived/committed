@@ -1,6 +1,8 @@
 require 'redis'
 
 module Committed
+  ##
+  # DB object, stores users in Redis
   class DB
     def initialize
       @store = Redis.new
@@ -20,6 +22,8 @@ module Committed
     end
   end
 
+  ##
+  # NullDB, mocks DB and stores nothing
   class NullDB
     def register(_, _)
       'Registration is disabled'
