@@ -6,10 +6,10 @@ module Committed
   module SMS
     def parse_message(from, body)
       case body
-      when /^register (?<user>[\w-]+)$/i
+      when /\Aregister (?<user>[\w-]+)\z/i
         user = Regexp.last_match[:user]
         DATABASE.register from, user
-      when /^user (?<user>[\w-]+)$/i
+      when /\Auser (?<user>[\w-]+)\z/i
         status_message Regexp.last_match[:user]
       else
         status_message(DATABASE.lookup(from) || DEFAULT_USER)

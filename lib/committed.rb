@@ -21,7 +21,7 @@ module Committed
       redirect to("/user/#{DEFAULT_USER}"), 307
     end
 
-    get %r{^/user/([\w-]+)$} do |user|
+    get %r{\A/user/([\w-]+)\z} do |user|
       status_message(user)
     end
 
