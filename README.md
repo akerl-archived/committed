@@ -13,9 +13,9 @@ Application to quickly check GitHub commit streak information
 
 To run this locally, `bundle install` to get the dependencies and then `bundle exec thin start`. This will start the webserver up locally. To specify a custom port, use `bundle exec thin start -p PORT`.
 
-I run this on heroku, at https://akerl-committed.herokuapp.com/
+I've written a Docker container for this: [dock0/committed](https://github.com/dock0/committed).
 
-It has an endpoint that responds with Twilio's TwiML, allowing this to respond to text messages with commit information. To set this up, just run it somewhere public and point your Twilio number's SMS endpoint to `https://example.com/sms/`
+It has an endpoint that responds with Twilio's TwiML, allowing this to respond to text messages with commit information. To set this up, just run it somewhere that Twilio can hit it and point your Twilio number's SMS endpoint to `http://example.com/sms/`
 
 ### SMS commands
 
