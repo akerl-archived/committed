@@ -11,7 +11,7 @@ gem 'redis', '~> 3.2.0'
 group :development do
   gem 'rubocop', '~> 0.34.0'
   gem 'rake', '~> 10.4.0'
-  gem 'coveralls', '~> 0.8.0'
+  gem 'codecov', '~> 0.1.1'
   gem 'rspec', '~> 3.3.0'
   gem 'fuubar', '~> 2.0.0'
 end
