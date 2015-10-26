@@ -8,7 +8,8 @@ module Committed
     def check(user)
       Committed::RESULT_CACHE.cache(user) do
         begin
-          GithubStats.new(user).today > 0
+          stats = GithubStats.new(user)
+          [stats.today > 0, stats.streak]
         rescue RuntimeError
           :error
         end
@@ -16,9 +17,9 @@ module Committed
     end
 
     def status_message(user)
-      result = check user
+      result, streak = check user
       return 'Error processing request' if result == :error
-      "#{user} has #{'not ' unless result}committed today"
+      "#{user} has #{'not ' unless result}committed today (#{streak})"
     end
   end
 end
