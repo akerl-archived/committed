@@ -36,7 +36,7 @@ GEM
       rack
     rainbow (2.0.0)
     rake (10.4.2)
-    redis (3.2.1)
+    redis (3.2.2)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
