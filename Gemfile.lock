@@ -6,11 +6,11 @@ GEM
       parser (~> 2.2)
     basiccache (1.0.0)
     builder (3.2.2)
-    codecov (0.1.2)
+    codecov (0.1.4)
       json
       simplecov
       url
-    curb (0.9.0)
+    curb (0.8.8)
     daemons (1.2.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
@@ -20,7 +20,7 @@ GEM
       ruby-progressbar (~> 1.4)
     githubstats (1.1.0)
       basiccache (~> 1.0.0)
-      curb (~> 0.9.0)
+      curb (~> 0.8.6)
       nokogiri (~> 1.6.5)
     json (1.8.3)
     jwt (1.5.2)
@@ -71,7 +71,7 @@ GEM
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
-    tilt (2.0.1)
+    tilt (2.0.2)
     tins (1.6.0)
     twilio-ruby (4.9.0)
       builder (>= 2.1.2)
@@ -96,4 +96,4 @@ DEPENDENCIES
   twilio-ruby (~> 4.9.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
