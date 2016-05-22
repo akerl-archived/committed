@@ -24,7 +24,7 @@ module Committed
     def status_message(user)
       result, streak = check user
       return 'Error processing request' if result == :error
-      MESSAGES[result] % { user: user, streak: streak }
+      MESSAGES[result] % { user: user, score: streak.size }
     end
   end
 end
