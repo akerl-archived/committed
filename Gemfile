@@ -2,7 +2,7 @@ ruby '2.3.1'
 source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.6'
-gem 'thin', '~> 1.6.2'
+gem 'thin', '~> 1.7.0'
 gem 'twilio-ruby', '~> 4.11.0'
 gem 'githubstats', '~> 1.2.0'
 gem 'basiccache', '~> 1.0.0'
