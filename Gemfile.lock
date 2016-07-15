@@ -13,7 +13,7 @@ GEM
     diff-lcs (1.2.5)
     docile (1.1.5)
     eventmachine (1.2.0.1)
-    fuubar (2.1.0)
+    fuubar (2.1.1)
       rspec (~> 3.0)
       ruby-progressbar (~> 1.4)
     githubstats (1.2.0)
