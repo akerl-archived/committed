@@ -14,7 +14,7 @@ module Committed
       Committed::RESULT_CACHE.cache(user) do
         begin
           stats = GithubStats.new(user)
-          [stats.today > 0, stats.streak.size]
+          [stats.today.positive?, stats.streak.size]
         rescue RuntimeError
           :error
         end
