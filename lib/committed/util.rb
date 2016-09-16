@@ -14,7 +14,7 @@ module Committed
       Committed::RESULT_CACHE.cache(user) do
         begin
           stats = GithubStats.new(user)
-          [stats.today.positive?, stats.streak.size]
+          [stats.today.positive?, stats.today]
         rescue RuntimeError
           :error
         end
@@ -22,9 +22,9 @@ module Committed
     end
 
     def status_message(user)
-      result, streak = check user
+      result, today = check user
       return 'Error processing request' if result == :error
-      MESSAGES[result] % { user: user, score: streak.size }
+      MESSAGES[result] % { user: user, score: today }
     end
   end
 end
