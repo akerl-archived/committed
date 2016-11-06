@@ -4,7 +4,7 @@ GEM
     ast (2.3.0)
     basiccache (1.0.0)
     builder (3.2.2)
-    codecov (0.1.6)
+    codecov (0.1.7)
       json
       simplecov
       url
