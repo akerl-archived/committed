@@ -4,7 +4,7 @@ GEM
     ast (2.3.0)
     basiccache (1.0.0)
     builder (3.2.2)
-    codecov (0.1.7)
+    codecov (0.1.8)
       json
       simplecov
       url
@@ -29,7 +29,7 @@ GEM
     parser (2.3.1.4)
       ast (~> 2.2)
     powerpack (0.1.1)
-    rack (1.6.4)
+    rack (1.6.5)
     rack-protection (1.5.3)
       rack
     rainbow (2.1.0)
