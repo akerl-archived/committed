@@ -12,7 +12,7 @@ GEM
     daemons (1.2.4)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    eventmachine (1.2.0.1)
+    eventmachine (1.2.1)
     fuubar (2.2.0)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
@@ -34,7 +34,7 @@ GEM
       rack
     rainbow (2.1.0)
     rake (11.3.0)
-    redis (3.3.1)
+    redis (3.3.2)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -93,7 +93,7 @@ DEPENDENCIES
   twilio-ruby (~> 4.13.0)
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.2p217
 
 BUNDLED WITH
    1.13.6
