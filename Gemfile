@@ -9,7 +9,7 @@ gem 'basiccache', '~> 1.0.0'
 gem 'redis', '~> 3.3.0'
 
 group :development do
-  gem 'rubocop', '~> 0.45.0'
+  gem 'rubocop', '~> 0.46.0'
   gem 'rake', '~> 11.3.0'
   gem 'codecov', '~> 0.1.1'
   gem 'rspec', '~> 3.5.0'
