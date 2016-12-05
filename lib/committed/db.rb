@@ -29,7 +29,6 @@ module Committed
       'Registration is disabled'
     end
 
-    def lookup(_)
-    end
+    def lookup(_) end
   end
 end
