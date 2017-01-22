@@ -24,6 +24,7 @@ module Committed
     def status_message(user)
       result, today = check user
       return 'Error processing request' if result == :error
+      # rubocop:disable Style/FormatString
       MESSAGES[result] % { user: user, score: today }
     end
   end
