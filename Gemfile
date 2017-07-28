@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', '~> 2.0.0'
 gem 'thin', '~> 1.7.0'
-gem 'twilio-ruby', '~> 5.0.0'
+gem 'twilio-ruby', '~> 5.1.0'
 gem 'githubstats', '~> 1.4.0'
 gem 'basiccache', '~> 1.0.0'
 gem 'redis', '~> 3.3.0'

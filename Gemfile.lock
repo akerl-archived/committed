@@ -11,8 +11,8 @@ GEM
     daemons (1.2.4)
     diff-lcs (1.3)
     docile (1.1.5)
-    eventmachine (1.2.3)
-    faraday (0.12.1)
+    eventmachine (1.2.5)
+    faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     fuubar (2.2.0)
       rspec-core (~> 3.0)
@@ -29,7 +29,7 @@ GEM
     mustermann (1.0.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
-    parallel (1.11.2)
+    parallel (1.12.0)
     parser (2.4.0.0)
       ast (~> 2.2)
     powerpack (0.1.1)
@@ -75,8 +75,8 @@ GEM
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
-    tilt (2.0.7)
-    twilio-ruby (5.0.0)
+    tilt (2.0.8)
+    twilio-ruby (5.1.0)
       faraday (~> 0.9)
       jwt (~> 1.5)
       libxml-ruby (= 3.0.0)
@@ -97,10 +97,10 @@ DEPENDENCIES
   rubocop (~> 0.49.0)
   sinatra (~> 2.0.0)
   thin (~> 1.7.0)
-  twilio-ruby (~> 5.0.0)
+  twilio-ruby (~> 5.1.0)
 
 RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.1
+   1.15.3
