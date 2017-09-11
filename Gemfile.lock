@@ -38,7 +38,7 @@ GEM
       rack
     rainbow (2.2.2)
       rake
-    rake (12.0.0)
+    rake (12.1.0)
     redis (4.0.0)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
@@ -91,7 +91,7 @@ DEPENDENCIES
   codecov (~> 0.1.1)
   fuubar (~> 2.2.0)
   githubstats (~> 1.4.0)
-  rake (~> 12.0.0)
+  rake (~> 12.1.0)
   redis (~> 4.0.0)
   rspec (~> 3.6.0)
   rubocop (~> 0.49.0)
