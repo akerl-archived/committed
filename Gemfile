@@ -12,7 +12,7 @@ gem 'twilio-ruby', '~> 5.2.0'
 group :development do
   gem 'codecov', '~> 0.1.1'
   gem 'fuubar', '~> 2.2.0'
-  gem 'goodcop', '~> 0.0.1'
+  gem 'goodcop', '~> 0.1.0'
   gem 'rake', '~> 12.1.0'
   gem 'rspec', '~> 3.6.0'
   gem 'rubocop', '~> 0.50.0'
