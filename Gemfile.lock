@@ -99,7 +99,7 @@ DEPENDENCIES
   rubocop (~> 0.51.0)
   sinatra (~> 2.0.0)
   thin (~> 1.7.0)
-  twilio-ruby (~> 5.5.0)
+  twilio-ruby (~> 5.5.1)
 
 RUBY VERSION
    ruby 2.4.2p198
