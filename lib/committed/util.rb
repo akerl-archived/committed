@@ -26,6 +26,7 @@ module Committed
       return 'Error processing request' if result == :error
       # rubocop:disable Style/FormatString
       MESSAGES[result] % { user: user, score: today }
+      # rubocop:enable Style/FormatString
     end
   end
 end
