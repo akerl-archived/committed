@@ -14,7 +14,7 @@ GEM
     eventmachine (1.2.5)
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
-    fuubar (2.3.0)
+    fuubar (2.3.1)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
     githubstats (2.0.0)
