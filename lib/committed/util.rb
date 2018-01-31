@@ -12,12 +12,10 @@ module Committed
 
     def check(user)
       Committed::RESULT_CACHE.cache(user) do
-        begin
-          stats = GithubStats.new(user)
-          [stats.today.positive?, stats.today]
-        rescue RuntimeError
-          :error
-        end
+        stats = GithubStats.new(user)
+        [stats.today.positive?, stats.today]
+      rescue RuntimeError
+        :error
       end
     end
 
