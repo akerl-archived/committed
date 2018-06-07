@@ -7,12 +7,12 @@ GEM
       json
       simplecov
       url
-    curb (0.9.4)
+    curb (0.9.6)
     daemons (1.2.6)
     diff-lcs (1.3)
-    docile (1.3.0)
+    docile (1.3.1)
     eventmachine (1.2.7)
-    faraday (0.15.1)
+    faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
     fuubar (2.3.1)
       rspec-core (~> 3.0)
@@ -23,6 +23,7 @@ GEM
       nokogiri (~> 1.8.0)
     goodcop (0.5.0)
       fuubar (~> 2.3.0)
+    jaro_winkler (1.5.1)
     json (2.1.0)
     jwt (2.1.0)
     mini_portile2 (2.3.0)
@@ -35,7 +36,7 @@ GEM
       ast (~> 2.4.0)
     powerpack (0.1.1)
     rack (2.0.5)
-    rack-protection (2.0.1)
+    rack-protection (2.0.2)
       rack
     rainbow (3.0.0)
     rake (12.3.1)
@@ -53,7 +54,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    rubocop (0.56.0)
+    rubocop (0.57.1)
+      jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5)
       powerpack (~> 0.1)
@@ -66,21 +68,21 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sinatra (2.0.1)
+    sinatra (2.0.2)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.1)
+      rack-protection (= 2.0.2)
       tilt (~> 2.0)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.8)
-    twilio-ruby (5.10.0)
+    twilio-ruby (5.10.3)
       faraday (~> 0.9)
       jwt (>= 1.5, <= 2.5)
       nokogiri (>= 1.6, < 2.0)
-    unicode-display_width (1.3.2)
+    unicode-display_width (1.4.0)
     url (0.3.2)
 
 PLATFORMS
@@ -95,7 +97,7 @@ DEPENDENCIES
   rake (~> 12.3.0)
   redis (~> 4.0.0)
   rspec (~> 3.7.0)
-  rubocop (~> 0.56.0)
+  rubocop (~> 0.57.1)
   sinatra (~> 2.0.0)
   thin (~> 1.7.0)
   twilio-ruby (~> 5.10.0)
@@ -104,4 +106,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
