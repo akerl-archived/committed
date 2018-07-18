@@ -17,7 +17,7 @@ GEM
     fuubar (2.3.1)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
-    githubstats (2.0.0)
+    githubstats (3.0.0)
       basiccache (~> 1.0.0)
       curb (~> 0.9.0)
       nokogiri (~> 1.8.0)
@@ -78,7 +78,7 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.8)
-    twilio-ruby (5.11.0)
+    twilio-ruby (5.11.1)
       faraday (~> 0.9)
       jwt (>= 1.5, <= 2.5)
       nokogiri (>= 1.6, < 2.0)
@@ -92,7 +92,7 @@ DEPENDENCIES
   basiccache (~> 1.0.0)
   codecov (~> 0.1.1)
   fuubar (~> 2.3.0)
-  githubstats (~> 2.0.0)
+  githubstats (~> 3.0.0)
   goodcop (~> 0.5.0)
   rake (~> 12.3.0)
   redis (~> 4.0.0)
@@ -106,4 +106,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.2
+   1.16.3
