@@ -1,7 +1,6 @@
 committed
 =========
 
-[![Dependency Status](https://img.shields.io/gemnasium/akerl/committed.svg)](https://gemnasium.com/akerl/committed)
 [![Build Status](https://img.shields.io/circleci/project/akerl/committed/master.svg)](https://circleci.com/gh/akerl/committed)
 [![Coverage Status](https://img.shields.io/codecov/c/github/akerl/committed.svg)](https://codecov.io/github/akerl/committed)
 [![Code Quality](https://img.shields.io/codacy/4bbc0285042f48049c16938ef2d395e0.svg)](https://www.codacy.com/app/akerl/committed)
