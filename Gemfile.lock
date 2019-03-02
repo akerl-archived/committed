@@ -31,7 +31,7 @@ GEM
     mustermann (1.0.3)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
-    parallel (1.13.0)
+    parallel (1.14.0)
     parser (2.6.0.0)
       ast (~> 2.4.0)
     powerpack (0.1.2)
@@ -80,7 +80,7 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.9)
-    twilio-ruby (5.20.1)
+    twilio-ruby (5.21.0)
       faraday (~> 0.9)
       jwt (>= 1.5, <= 2.5)
       nokogiri (>= 1.6, < 2.0)
@@ -102,7 +102,7 @@ DEPENDENCIES
   rubocop (~> 0.65.0)
   sinatra (~> 2.0.0)
   thin (~> 1.7.0)
-  twilio-ruby (~> 5.20.1)
+  twilio-ruby (~> 5.21.0)
 
 RUBY VERSION
    ruby 2.6.1p33

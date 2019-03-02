@@ -7,7 +7,7 @@ gem 'githubstats', '~> 3.0.0'
 gem 'redis', '~> 4.1.0'
 gem 'sinatra', '~> 2.0.0'
 gem 'thin', '~> 1.7.0'
-gem 'twilio-ruby', '~> 5.20.1'
+gem 'twilio-ruby', '~> 5.21.0'
 
 group :development do
   gem 'codecov', '~> 0.1.1'
