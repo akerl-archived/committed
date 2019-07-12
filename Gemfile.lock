@@ -94,7 +94,7 @@ DEPENDENCIES
   codecov (~> 0.1.1)
   fuubar (~> 2.4.1)
   githubstats (~> 3.0.0)
-  goodcop (~> 0.7.0)
+  goodcop (~> 0.7.1)
   rake (~> 12.3.0)
   redis (~> 4.1.0)
   rspec (~> 3.8.0)
