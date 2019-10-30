@@ -11,5 +11,5 @@ gem 'twilio-ruby', '~> 5.25.1'
 
 group :development do
   gem 'codecov', '~> 0.1.1'
-  gem 'goodcop', '~> 0.7.1'
+  gem 'goodcop', '~> 0.8.0'
 end
